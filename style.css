@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500;700;900&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 300;
+    min-width: 700px;
+}
+
+section {
+    padding: 5px 60px;
+}
+
+
+/* navbar */
+
+nav {
+    background-color: #181733;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+nav ul {
+    display: flex;
+    padding: 5px 60px;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Welcome Section */
+
+#welcome-section {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( 65deg, rgba(205, 18, 45, 0.4), rgba(21, 66, 132, 0.4));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome-section h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 3em;
+    font-weight: 900;
+    color: #68bbe3;
+    filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.5));
+}
+
+#welcome-section p {
+    padding: 0;
+    margin: 0;
+    font-size: 2.8em;
+    font-style: italic;
+    color: #333;
+    filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.6));
+}
+
+
+/* about */
+
+#about {
+    min-width: 700px;
+}
+
+#about h1 {
+    padding-top: 10px;
+    font-weight: 700;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+#about p {
+    font-weight: 300;
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 1.8;
+}
+
+
+/* projects */
+
+#projects {
+    margin: 0 auto;
+    height: auto;
+    background-color: rgba(179, 179, 179, 0.6);
+}
+
+#projects h1 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: 700;
+}
+
+#projects ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects li {
+    width: 300px;
+    height: 250px;
+}
+
+.project-tile {
+    position: relative;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project-tile .project-image {
+    width: 100%;
+    height: 100%;
+}
+
+.project-tile .project-cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    transition: 0.3s all ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-name {
+    color: whitesmoke;
+    font-size: 1.4em;
+}
+
+
+/* contacts */
+
+#contact {
+    margin: 0 auto;
+    background-color: #181733;
+}
+
+#contact h1 {
+    font-size: 1.9em;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+#contact .message {
+    text-align: center;
+    font-size: 1.7em;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+#contact .profile {
+    text-align: center;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.profile a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+footer {
+    margin: 0 auto;
+    background-color: #0e0d27;
+    filter: drop-shadow(0 -3px 3px rgba(0, 0, 0, 0.8));
+    padding: 20px 50px;
+}
+
+footer .copy {
+    color: whitesmoke;
+    text-align: right;
+}
+
+
+/* media */
+
+@media only screen and (max-width: 752px) {
+    nav {
+        background-color: #181733;
+    }
+}
